@@ -1,8 +1,9 @@
 import React from 'react';
+import Button from 'react-native'
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {createStackNavigator} from 'react-navigation-stack';
+// import {createStackNavigator} from 'react-navigation-stack';
 import { StatusBar } from 'expo-status-bar';
 
 const Stack = createNativeStackNavigator();
@@ -43,12 +44,10 @@ const newScreen = ({navigation}) => {
 
 export default function App() {
   return (
-    <NavigationContainer>
       <View style={styles.container}>
         <MyStack />
         <StatusBar style="auto" />
       </View>
-    </NavigationContainer>
   );
 }
 
